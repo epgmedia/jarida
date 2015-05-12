@@ -9,6 +9,8 @@
 </head>
 <?php global $is_IE ?>
 <body id="top" <?php body_class(); ?>>
+<?php /* DuracellTomi Google Tag Manager support */
+if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <?php if( tie_get_option('banner_bg_url') && tie_get_option('banner_bg') ): ?>
 	<a href="<?php echo tie_get_option('banner_bg_url') ?>" target="_blank" class="background-cover"></a>
 <?php else: ?>
