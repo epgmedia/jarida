@@ -1851,7 +1851,7 @@ class tie_mega_menu_walker extends Walker_Nav_Menu {
 			$output .= "\n</div></div> <!-- .mega-menu-block & container --> \n";
 		}
 	}
-	function start_el(&$output, $item, $depth, $args , $id = 0) {
+	function start_el(&$output, $item, $depth = 0, $args = Array() , $id = 0) {
 		global $wp_query;
 		$this->curItem = $item;
 		
